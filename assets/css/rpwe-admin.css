@@ -1,48 +1,18 @@
-.widgets-php .rpwe-columns-3 {
-	overflow: hidden;
-	float: left;
-	width: 31%;
-	margin-right: 3.5%;
+.rpwe-options small {
+  font-size: 0.7em;
+  color: #999;
 }
 
-.widgets-php .rpwe-columns-3 select.widefat {
-	width: 98.5%;
+.rpwe-info {
+  font-size: 0.8em;
+  line-height: 1.4;
 }
 
-.widgets-php .rpwe-column-last {
-	float: right;
-	margin-right: 0;
-}
-
-.widgets-php .rpwe-columns-3 label {
-	font-size: 11px;
-}
-
-.widgets-php .rpwe-columns-3 p small {
-	color: #777;
-	font-style: italic;
-}
-
-.small-input {
-	width: 30%;
+.rpwe-options .small-input {
+  width: 32% !important;
+  display: inline-block !important;
 }
 
 .rpwe-block {
-	display: block;
-}
-
-.rpwe-multiple-check-form {
-	margin: 1em 0;
-}
-
-.rpwe-multiple-check-form ul {
-	border: 1px solid #eee;
-	padding: 10px;
-	max-height: 110px;
-	overflow: auto;
-	margin-top: 0;
-}
-
-.rpwe-multiple-check-form ul li:last-child {
-	margin-bottom: 0;
+  display: block;
 }

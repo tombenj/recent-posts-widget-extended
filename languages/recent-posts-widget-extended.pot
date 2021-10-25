@@ -13,178 +13,178 @@ msgstr ""
 "X-Poedit-SourceCharset: UTF-8\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
-#: classes/widget.php:25
+#: classes/widget.php:19
 msgid "An advanced widget that gives you total control over the output of your site’s most recent Posts."
 msgstr ""
 
-#: classes/widget.php:37
+#: classes/widget.php:31
 msgid "Recent Posts Extended"
 msgstr ""
 
-#: includes/form.php:18
+#: includes/form.php:12
 msgid "Title"
 msgstr ""
 
-#: includes/form.php:25
+#: includes/form.php:19
 msgid "Title URL"
 msgstr ""
 
-#: includes/form.php:32
+#: includes/form.php:26
 msgid "CSS ID"
 msgstr ""
 
-#: includes/form.php:39
+#: includes/form.php:33
 msgid "CSS Class"
 msgstr ""
 
-#: includes/form.php:46
+#: includes/form.php:40
 msgid "HTML or text before the recent posts"
 msgstr ""
 
-#: includes/form.php:53
+#: includes/form.php:47
 msgid "HTML or text after the recent posts"
 msgstr ""
 
-#: includes/form.php:65
+#: includes/form.php:56
 msgid "Ignore sticky posts"
 msgstr ""
 
-#: includes/form.php:72
+#: includes/form.php:63
 msgid "Exclude current post"
 msgstr ""
 
-#: includes/form.php:78
+#: includes/form.php:69
 msgid "Post Types"
 msgstr ""
 
-#: includes/form.php:94
+#: includes/form.php:83
 msgid "Post Status"
 msgstr ""
 
-#: includes/form.php:105
+#: includes/form.php:94
 msgid "Order"
 msgstr ""
 
-#: includes/form.php:115
+#: includes/form.php:104
 msgid "Orderby"
 msgstr ""
 
-#: includes/form.php:131
+#: includes/form.php:120
 msgid "Limit to Category"
 msgstr ""
 
-#: includes/form.php:147
+#: includes/form.php:135
 msgid "Limit to Tag"
 msgstr ""
 
-#: includes/form.php:163
+#: includes/form.php:149
 msgid "Limit to Taxonomy"
 msgstr ""
 
-#: includes/form.php:177
+#: includes/form.php:159
 msgid "Number of posts to show"
 msgstr ""
 
-#: includes/form.php:184
+#: includes/form.php:166
 msgid "Offset"
 msgstr ""
 
-#: includes/form.php:187
+#: includes/form.php:169
 msgid "The number of posts to skip"
 msgstr ""
 
-#: includes/form.php:195
+#: includes/form.php:177
 msgid "Display Thumbnail"
 msgstr ""
 
-#: includes/form.php:201
+#: includes/form.php:183
 msgid "Thumbnail (height,width,align)"
 msgstr ""
 
-#: includes/form.php:206
+#: includes/form.php:191
 msgid "Left"
 msgstr ""
 
-#: includes/form.php:207
+#: includes/form.php:192
 msgid "Right"
 msgstr ""
 
-#: includes/form.php:208
+#: includes/form.php:193
 msgid "Center"
 msgstr ""
 
-#: includes/form.php:214
+#: includes/form.php:199
 msgid "Default Thumbnail"
 msgstr ""
 
-#: includes/form.php:217
+#: includes/form.php:202
 msgid "Leave it blank to disable."
 msgstr ""
 
-#: includes/form.php:225
+#: includes/form.php:210
 msgid "Display Excerpt"
 msgstr ""
 
-#: includes/form.php:231
+#: includes/form.php:216
 msgid "Excerpt Length"
 msgstr ""
 
-#: includes/form.php:239
+#: includes/form.php:224
 msgid "Display Readmore"
 msgstr ""
 
-#: includes/form.php:245
+#: includes/form.php:230
 msgid "Readmore Text"
 msgstr ""
 
-#: includes/form.php:253
+#: includes/form.php:238
 msgid "Display Comment Count"
 msgstr ""
 
-#: includes/form.php:260
+#: includes/form.php:245
 msgid "Display Date"
 msgstr ""
 
-#: includes/form.php:267
+#: includes/form.php:252
 msgid "Display Modification Date"
 msgstr ""
 
-#: includes/form.php:274
+#: includes/form.php:259
 msgid "Use Relative Date. eg: 5 days ago"
 msgstr ""
 
-#: includes/form.php:286
+#: includes/form.php:267
 msgid "Use Default Styles"
 msgstr ""
 
-#: includes/form.php:292
+#: includes/form.php:273
 msgid "Custom CSS"
 msgstr ""
 
-#: includes/form.php:295
+#: includes/form.php:276
 msgid "If you turn off the default styles, you can use these css code to customize the recent posts style."
 msgstr ""
 
-#: includes/functions.php:49
+#: includes/functions.php:43
 msgid "Read More &raquo;"
 msgstr ""
 
-#: includes/functions.php:172
+#: includes/functions.php:166
 msgid "Permalink to %s"
 msgstr ""
 
-#: includes/functions.php:183, includes/functions.php:177
+#: includes/functions.php:177, includes/functions.php:171
 msgid "%s ago"
 msgstr ""
 
-#: includes/functions.php:194
+#: includes/functions.php:188
 msgid "1 Comment"
 msgstr ""
 
-#: includes/functions.php:192
+#: includes/functions.php:186
 msgid "%s Comments"
 msgstr ""
 
-#: includes/functions.php:190
+#: includes/functions.php:184
 msgid "No Comments"
 msgstr ""

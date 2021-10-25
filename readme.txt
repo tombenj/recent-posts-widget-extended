@@ -2,12 +2,12 @@
 Contributors: idenovasi, satrya
 Donate link: https://paypal.me/satrya
 Tags: recent posts, random posts, popular posts, thumbnails, widget, widgets, sidebar, excerpt, category, post tag, taxonomy, post type, post status, shortcode, multiple widgets
-Requires at least: 4.8
-Tested up to: 5.6
+Requires at least: 5.8
+Tested up to: 5.8
 Requires PHP: 7.2
-Stable tag: 1.0.0
-License: GPLv3 or later
-License URI: http://www.gnu.org/licenses/gpl-3.0.html
+Stable tag: 1.1.0
+License: GPLv2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
 Provides flexible and advanced recent posts. Display it via shortcode or widget with thumbnails, post excerpt, taxonomy and more.
 
@@ -41,7 +41,7 @@ This plugin will enable a custom, flexible and super [advanced recent posts](htt
 = Support this project =
 
 * [Translate to your language](https://translate.wordpress.org/projects/wp-plugins/recent-posts-widget-extended/).
-* Contribute on [Github](https://github.com/satrya/recent-posts-widget-extended).
+* Contribute on [Github](https://github.com/idenovasi/recent-posts-widget-extended).
 * [Donate](https://paypal.me/satrya).
 
 == Installation ==
@@ -230,8 +230,23 @@ after=""
 
 == Changelog ==
 
-= 1.0.0 - Feb 17, 2021 =
-- This is just a maintenance update after a couple years with no update. Thank you for still using this plugin 🥳
+**1.1.0**
+
+Release Date: Oct 25, 2021
+
+This release comes with several fixes and enhancements to support the new Widget Block in WordPress 5.8.
+
+**Enhancements:**
+
+- Adds `height` and `width` attribute to the image thumbnail.
+
+**Bugfixes:**
+
+- Fixes a bug the widget couldn't load on new Widgets Block page.
+
+**Warning:**
+
+Current thumbnail resize system will be deprecated and replaced with WordPress built-in thumbnail resize function.
 
 
 

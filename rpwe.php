@@ -1,31 +1,18 @@
 <?php
 
 /**
- * Plugin Name:  Recent Posts Widget Extended
- * Plugin URI:   https://idenovasi.com/projects/recent-posts-widget-extended/
- * Description:  Enables advanced widget that gives you total control over the output of your site’s most recent Posts.
- * Version:      1.0.0
- * Author:       Satrya
- * Author URI:   https://idenovasi.com/
- * Author Email: satrya@idenovasi.com
- * Text Domain:  recent-posts-widget-extended
- * Domain Path:  /languages
- *
- * This program is free software; you can redistribute it and/or modify it under the terms of the GNU
- * General Public License as published by the Free Software Foundation; either version 2 of the License,
- * or (at your option) any later version.
- *
- * This program is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without
- * even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
- *
- * You should have received a copy of the GNU General Public License along with this program; if not, write
- * to the Free Software Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA 02110-1301 USA
- *
- * @package    Recent_Posts_Widget_Extended
- * @since      0.1
- * @author     Satrya
- * @copyright  Copyright (c) 2014, Satrya
- * @license    http://www.gnu.org/licenses/gpl-2.0.html
+ * Plugin Name:       Recent Posts Widget Extended
+ * Plugin URI:        https://idenovasi.com/projects/recent-posts-widget-extended/
+ * Description:       Enables advanced widget that gives you total control over the output of your site’s most recent Posts.
+ * Version:           1.1.0
+ * Requires at least: 5.8
+ * Requires PHP:      7.2
+ * Author:            Idenovasi
+ * Author URI:        https://idenovasi.com/
+ * License:           GPL v2 or later
+ * License URI:       https://www.gnu.org/licenses/gpl-2.0.html
+ * Text Domain:       recent-posts-widget-extended
+ * Domain Path:       /languages
  */
 
 // Exit if accessed directly

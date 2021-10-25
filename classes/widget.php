@@ -3,12 +3,6 @@
 /**
  * The custom recent posts widget.
  * This widget gives total control over the output to the user.
- *
- * @package    Recent_Posts_Widget_Extended
- * @since      0.1
- * @author     Satrya
- * @copyright  Copyright (c) 2014, Satrya
- * @license    http://www.gnu.org/licenses/gpl-2.0.html
  */
 class Recent_Posts_Widget_Extended extends WP_Widget {
 
