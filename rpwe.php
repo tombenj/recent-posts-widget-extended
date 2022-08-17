@@ -2,15 +2,15 @@
 
 /**
  * Plugin Name:       Recent Posts Widget Extended
- * Plugin URI:        https://idenovasi.com/projects/recent-posts-widget-extended/
+ * Plugin URI:        https://github.com/gasatrya/recent-posts-widget-extended
  * Description:       Enables advanced widget that gives you total control over the output of your site’s most recent Posts.
- * Version:           1.1.0
+ * Version:           1.2.0
  * Requires at least: 5.8
  * Requires PHP:      7.2
- * Author:            Idenovasi
- * Author URI:        https://idenovasi.com/
- * License:           GPL v2 or later
- * License URI:       https://www.gnu.org/licenses/gpl-2.0.html
+ * Author:            Ga Satrya
+ * Author URI:        https://gasatrya.dev/
+ * License:           GPL v3 or later
+ * License URI:       https://www.gnu.org/licenses/gpl-3.0.html
  * Text Domain:       recent-posts-widget-extended
  * Domain Path:       /languages
  */

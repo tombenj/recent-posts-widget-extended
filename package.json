@@ -1,29 +1,30 @@
 {
-	"name": "recent-posts-widget-extended",
-	"version": "1.0.0",
-	"description": "This plugin will enable a custom, flexible and super advanced recent posts, you can display it via shortcode or widget.",
-	"main": "gulpfile.js",
-	"scripts": {
-		"test": "echo \"Error: no test specified\" && exit 1"
-	},
-	"repository": {
-		"type": "git",
-		"url": "git+https://github.com/satrya/recent-posts-widget-extended.git"
-	},
-	"keywords": [
-		"wordpress",
-		"plugin"
-	],
-	"author": "Satrya",
-	"license": "GPL-3.0-or-later",
-	"bugs": {
-		"url": "https://github.com/satrya/recent-posts-widget-extended/issues"
-	},
-	"homepage": "https://github.com/satrya/recent-posts-widget-extended#readme",
-	"devDependencies": {
-		"del": "^6.0.0",
-		"gulp": "^4.0.2",
-		"gulp-wp-pot": "^2.5.0",
-		"gulp-zip": "^5.1.0"
-	}
+  "name": "recent-posts-widget-extended",
+  "version": "1.0.0",
+  "description": "This plugin will enable a custom, flexible and super advanced recent posts, you can display it via shortcode or widget.",
+  "main": "gulpfile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/satrya/recent-posts-widget-extended.git"
+  },
+  "keywords": [
+    "wordpress",
+    "plugin"
+  ],
+  "author": "Satrya",
+  "license": "GPL-3.0-or-later",
+  "bugs": {
+    "url": "https://github.com/satrya/recent-posts-widget-extended/issues"
+  },
+  "homepage": "https://github.com/satrya/recent-posts-widget-extended#readme",
+  "devDependencies": {
+    "del": "^6.0.0",
+    "gulp": "^4.0.2",
+    "gulp-wp-pot": "^2.5.0",
+    "gulp-zip": "^5.1.0"
+  }
 }
+
