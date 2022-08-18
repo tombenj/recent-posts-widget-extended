@@ -1,6 +1,6 @@
 {
   "name": "recent-posts-widget-extended",
-  "version": "1.0.0",
+  "version": "2.0",
   "description": "This plugin will enable a custom, flexible and super advanced recent posts, you can display it via shortcode or widget.",
   "main": "gulpfile.js",
   "scripts": {
@@ -27,4 +27,3 @@
     "gulp-zip": "^5.1.0"
   }
 }
-

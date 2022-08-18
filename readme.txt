@@ -3,9 +3,9 @@ Contributors: satrya
 Donate link: https://paypal.me/satrya
 Tags: recent posts, random posts, popular posts, thumbnails, widget, widgets, sidebar, excerpt, category, post tag, taxonomy, post type, post status, shortcode, multiple widgets
 Requires at least: 5.8
-Tested up to: 6.0
+Tested up to: 7.0
 Requires PHP: 7.2
-Stable tag: 1.2.0
+Stable tag: 2.0
 License: GPLv3 or later
 License URI: https://www.gnu.org/licenses/gpl-3.0.html
 

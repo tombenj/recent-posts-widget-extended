@@ -14,6 +14,15 @@ function rpwe_shortcode($atts, $content) {
         $atts['cssID'] = $atts['cssid'];
         unset($atts['cssid']);
     }
+
+    if (isset($atts['cat'])) {
+        $atts['cat'] = '';
+    }
+
+    if (isset($atts['tag'])) {
+        $atts['tag'] = '';
+    }
+
     $args = shortcode_atts(rpwe_get_default_args(), $atts);
     return rpwe_get_recent_posts($args);
 }

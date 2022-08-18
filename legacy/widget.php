@@ -99,8 +99,8 @@ class Recent_Posts_Widget_Extended extends WP_Widget {
         $instance['orderby']          = stripslashes($new_instance['orderby']);
         $instance['post_type']        = $types;
         $instance['post_status']      = stripslashes($new_instance['post_status']);
-        $instance['cat']              = $new_instance['cat'];
-        $instance['tag']              = $new_instance['tag'];
+        $instance['cat']              = isset($new_instance['cat']) ? $new_instance['cat'] : '';
+        $instance['tag']              = isset($new_instance['tag']) ? $new_instance['tag'] : '';
         $instance['taxonomy']         = esc_attr($new_instance['taxonomy']);
 
         $instance['excerpt']          = isset($new_instance['excerpt']) ? (bool) $new_instance['excerpt'] : false;
@@ -152,6 +152,6 @@ class Recent_Posts_Widget_Extended extends WP_Widget {
         extract($instance);
 
         // Loads the widget form.
-        include(RPWE_INCLUDES . 'form.php');
+        include('form.php');
     }
 }
