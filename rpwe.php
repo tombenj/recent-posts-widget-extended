@@ -31,7 +31,10 @@ define( 'RP_LEGACY', plugin_dir_path( __FILE__ ) . 'legacy' );
 require_once RP_LEGACY . '/legacy.php';
 
 // Load plugin files.
-require_once RP_INCLUDES . '/helpers.php';
+require_once RP_INCLUDES . '/defaults.php';
+require_once RP_INCLUDES . '/query.php';
+require_once RP_INCLUDES . '/functions.php';
+require_once RP_INCLUDES . '/shortcodes.php';
 
 /**
  * Language
