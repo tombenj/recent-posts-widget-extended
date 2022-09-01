@@ -17,8 +17,6 @@ function rposts_get_posts( $args = array() ) {
 	$defs = rposts_get_defaults();
 	$args = wp_parse_args( $args, $defs );
 
-	// print_r( $args['container'] );
-
 	// Set up a default, empty variable.
 	$html = '';
 
@@ -29,7 +27,7 @@ function rposts_get_posts( $args = array() ) {
 
 		// Container open
 		// Filters the list of HTML tags that are valid for use as list containers.
-		$allowed_container_tags = apply_filters( 'rpost_container_allowedtags', array( 'div', 'section', 'aside' ) );
+		$allowed_container_tags = apply_filters( 'rposts_container_allowedtags', array( 'div', 'section', 'aside' ) );
 		if ( is_string( $args['container'] ) && in_array( $args['container'], $allowed_container_tags, true ) ) {
 			$class = $args['container_class'] ? ' class="rposts ' . esc_attr( $args['container_class'] ) . '"' : ' class="rposts"';
 			$id    = $args['container_id'] ? ' id="' . esc_attr( $args['container_id'] ) . '"' : '';
@@ -54,13 +52,70 @@ function rposts_get_posts( $args = array() ) {
 			}
 		}
 
+		// Item wrapper open
+		// Filters the list of HTML tags that are valid for use as list wrappers.
+		$allowed_items_wrap_tags = apply_filters( 'rposts_items_wrap_allowedtags', array( 'div', 'ul', 'ol' ) );
+		if ( is_string( $args['items_wrap'] ) && in_array( $args['items_wrap'], $allowed_items_wrap_tags, true ) ) {
+			$class = $args['items_class'] ? ' class="rposts__items ' . esc_attr( $args['items_class'] ) . '"' : ' class="rposts__items"';
+			$html .= '<' . esc_attr( $args['items_wrap'] ) . $class . '>';
+		}
+
 		// Loop through the query.
 		while ( $posts->have_posts() ) :
 			$posts->the_post();
 
-			$html .= '<p>' . get_the_title() . '</p>';
+			// Item open
+			// Filters the list of HTML tags that are valid for use as list wrappers.
+			$allowed_item_wrap_tags = apply_filters( 'rposts_item_wrap_allowedtags', array( 'li', 'div' ) );
+			if ( is_string( $args['item_wrap'] ) && in_array( $args['item_wrap'], $allowed_item_wrap_tags, true ) ) {
+				$class = $args['item_class'] ? ' class="rposts__item ' . esc_attr( $args['item_class'] ) . '"' : ' class="rposts__item"';
+				$html .= '<' . esc_attr( $args['item_wrap'] ) . $class . '>';
+			}
+
+			if ( $args['thumbnail'] && has_post_thumbnail() ) {
+
+				if ( is_bool( $args['thumbnail_link'] ) ) {
+					$html .= '<a class="rposts__link-img" href="' . esc_url( get_permalink() ) . '">';
+				}
+
+				if ( (int) $args['thumbnail_width'] || (int) $args['thumbnail_height'] ) {
+
+					// Resize image.
+					$image_url = rposts_image_resize( wp_get_attachment_url( get_post_thumbnail_id() ), (int) $args['thumbnail_width'], (int) $args['thumbnail_height'], true );
+
+					$html .= '<img src="' . $image_url . '" class="rposts__img rpost__align-' . $args['thumbnail_align'] . '" alt="' . esc_attr( get_the_title() ) . '" loading="lazy" decoding="async">';
+
+				} else {
+					$html .= get_the_post_thumbnail(
+						get_the_ID(),
+						$args['thumbnail_size'],
+						array(
+							'alt'      => esc_attr( get_the_title() ),
+							'class'    => 'rposts__img rposts__align-' . $args['thumbnail_align'],
+							'loading'  => 'lazy',
+							'decoding' => 'async',
+						)
+					);
+				}
+			}
+
+			if ( is_bool( $args['thumbnail_link'] ) ) {
+				$html .= '</a>';
+			}
+
+				$html .= '<p>' . get_the_title() . '</p>';
+
+			// Item close.
+			if ( is_string( $args['item_wrap'] ) && in_array( $args['item_wrap'], $allowed_item_wrap_tags, true ) ) {
+				$html .= '</' . esc_attr( $args['item_wrap'] ) . '>';
+			}
 
 		endwhile;
+
+		// Items wrapper close.
+		if ( is_string( $args['items_wrap'] ) && in_array( $args['items_wrap'], $allowed_items_wrap_tags, true ) ) {
+			$html .= '</' . esc_attr( $args['items_wrap'] ) . '>';
+		}
 
 		// Container close.
 		if ( is_string( $args['container'] ) && in_array( $args['container'], $allowed_container_tags, true ) ) {

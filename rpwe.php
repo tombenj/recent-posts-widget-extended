@@ -22,7 +22,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 }
 
 define( 'RP_VERSION', '2.0' );
-define( 'RP_CLASSES', plugin_dir_path( __FILE__ ) . 'classes' );
+define( 'RP_CLASS', plugin_dir_path( __FILE__ ) . 'class' );
 define( 'RP_INCLUDES', plugin_dir_path( __FILE__ ) . 'inc' );
 define( 'RP_ASSETS', plugin_dir_url( __FILE__ ) . 'assets' );
 define( 'RP_LEGACY', plugin_dir_path( __FILE__ ) . 'legacy' );
@@ -33,6 +33,8 @@ require_once RP_LEGACY . '/legacy.php';
 // Load plugin files.
 require_once RP_INCLUDES . '/defaults.php';
 require_once RP_INCLUDES . '/query.php';
+require_once RP_CLASS . '/class-image-resizer.php';
+require_once RP_INCLUDES . '/helpers.php';
 require_once RP_INCLUDES . '/functions.php';
 require_once RP_INCLUDES . '/shortcodes.php';
 
