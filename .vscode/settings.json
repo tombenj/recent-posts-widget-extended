@@ -1,0 +1,7 @@
+{
+  "phpsab.executablePathCS": "./vendor/bin/phpcs",
+  "phpsab.standard": "WordPress",
+  "[php]": {
+    "editor.defaultFormatter": "valeryanm.vscode-phpsab"
+  }
+}

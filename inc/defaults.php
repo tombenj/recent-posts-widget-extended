@@ -2,7 +2,7 @@
 /**
  * Defauls
  *
- * @package Posts Extended
+ * @package Recent Posts Extended
  */
 
 /**
@@ -12,22 +12,23 @@
  */
 function rposts_get_defaults() {
 	$defaults = array(
-		// The title.
+		'id'                    => wp_unique_id( 'rposts' ),
+
+		// Markup.
 		'title'                 => '',
 		'title_url'             => '',
 		'title_tag'             => 'h3',
 		'title_class'           => '',
-
-		// Markup.
-		'container'             => 'div',
+		'container_tag'         => 'div',
 		'container_class'       => '',
 		'container_id'          => '',
-		'items_wrap'            => 'ul',
+		'items_tag'             => 'div',
 		'items_class'           => '',
-		'item_wrap'             => 'li',
+		'item_tag'              => 'article',
 		'item_class'            => '',
-		'item_title_wrap'       => 'h3',
-		'item_title_class'      => '',
+		'content_title_tag'     => 'h3',
+		'content_title_link'    => true,
+		'content_title_class'   => '',
 
 		// The query.
 		'posts_per_page'        => 5,
@@ -56,7 +57,8 @@ function rposts_get_defaults() {
 		'excerpt_length'        => 10,
 		'thumbnail'             => true,
 		'thumbnail_link'        => true,
-		'thumbnail_size'        => 'post-thumbnail',
+		'thumbnail_link_class'  => '',
+		'thumbnail_size'        => 'thumbnail',
 		'thumbnail_width'       => '',
 		'thumbnail_height'      => '',
 		'thumbnail_align'       => 'left',

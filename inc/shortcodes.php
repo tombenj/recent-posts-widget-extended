@@ -2,7 +2,7 @@
 /**
  * Shortcods
  *
- * @package Posts Extended
+ * @package Recent Posts Extended
  */
 
 /**
@@ -17,9 +17,13 @@ function rposts_shorcode( $atts ) {
 		$atts['thumbnail'] = rposts_string_to_boolean( $atts['thumbnail'] );
 	}
 
+	if ( isset( $atts['content_title_link'] ) ) {
+		$atts['content_title_link'] = rposts_string_to_boolean( $atts['content_title_link'] );
+	}
+
 	$defs = rposts_get_defaults();
 	$args = shortcode_atts( $defs, $atts );
 
 	return rposts_get_posts( $args );
 }
-add_shortcode( 'rpost', 'rposts_shorcode' );
+add_shortcode( 'rposts', 'rposts_shorcode' );

@@ -1,4 +1,4 @@
-=== Recent Posts Widget Extended ===
+=== Recent Posts Extended ===
 Contributors: satrya
 Donate link: https://paypal.me/satrya
 Tags: recent posts, random posts, popular posts, thumbnails, widget, widgets, sidebar, excerpt, category, post tag, taxonomy, post type, post status, shortcode, multiple widgets

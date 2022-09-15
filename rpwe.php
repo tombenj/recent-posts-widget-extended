@@ -1,6 +1,6 @@
 <?php
 /**
- * Plugin Name:       Posts Extended
+ * Plugin Name:       Recent Posts Extended
  * Plugin URI:        https://github.com/gasatrya/recent-posts-widget-extended
  * Description:       Enables advanced shortcode & widget that gives you total control over the output of your site’s most recent Posts.
  * Version:           2.0
@@ -13,7 +13,7 @@
  * Text Domain:       recent-posts-widget-extended
  * Domain Path:       /languages
  *
- * @package Posts Extended
+ * @package Recent Posts Extended
  */
 
 // Exit if accessed directly.

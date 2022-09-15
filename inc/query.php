@@ -12,10 +12,15 @@
  * @return object
  */
 function rposts_get_query( $args = array() ) {
+
+	// Merge the input arguments and the defaults.
+	$defs = rposts_get_defaults();
+	$args = wp_parse_args( $args, $defs );
+
 	// Query arguments.
 	$query = array(
-		'posts_per_page' => 1,
-		'post_type'      => 'post',
+		'posts_per_page' => $args['posts_per_page'],
+		'post_type'      => $args['post_types'],
 	);
 
 	// Perform the query.
