@@ -1,20 +1,33 @@
 <?php
-
 /**
  * Shortcode helper
+ *
+ * @package Recent Posts Extended
  */
 
 /**
- * Display recent posts with shortcode.
+ * Recent posts shortcode.
  *
- * @since  0.9.4
+ * @param array $atts the arguments.
+ * @return string|array The HTML for the posts.
  */
-function rpwe_shortcode($atts, $content) {
-    if (isset($atts['cssid'])) {
-        $atts['cssID'] = $atts['cssid'];
-        unset($atts['cssid']);
-    }
-    $args = shortcode_atts(rpwe_get_default_args(), $atts);
-    return rpwe_get_recent_posts($args);
+function rpwe_shortcode( $atts ) {
+
+	// Breaking changes from version 1.x.x to 2.0.
+	if ( isset( $atts['cssid'] ) ) {
+		$atts['css_id'] = $atts['cssid'];
+	} elseif ( isset( $atts['cssID'] ) ) {
+		$atts['css_id'] = $atts['cssID'];
+	}
+
+	// Merge the default arguments with the shortcode attributes.
+	$atts = shortcode_atts( rpwe_get_default_args(), $atts );
+
+	// load default style.
+	if ( $atts['styles_default'] ) {
+		wp_enqueue_style( 'rpwe-style' );
+	}
+
+	return rpwe_get_recent_posts( $atts );
 }
-add_shortcode('rpwe', 'rpwe_shortcode');
+add_shortcode( 'rpwe', 'rpwe_shortcode' );

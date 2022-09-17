@@ -230,23 +230,29 @@ after=""
 
 == Changelog ==
 
-**1.1.0**
+**2.0 - Major Changes**   
+*Release Date: Sept 20, 2022*
 
-Release Date: Oct 25, 2021
+This release comes major changes to the codebase, several fixes and enhancements. The reason was to follow the latest WordPress coding standard, more secure. **Classic widget and block widget is now supported!**
 
-This release comes with several fixes and enhancements to support the new Widget Block in WordPress 5.8.
+**Breaking Changes:**
+
+- **CSS ID** shortcode attribute for the container was `cssID` or `cssid`, please use `css_id` instead.
+- **CSS ID** widget, please re-added your ID to the input field.
+- `before` and `after` shortcode attribute move to inside the recent posts container.
+- Widget **custom style** location change. If your style is not loaded, please re-save the widget.
 
 **Enhancements:**
 
-- Adds `height` and `width` attribute to the image thumbnail.
+- Classic & blocks widget supported!
+- Support **lazy** loading for the thumbnail.
+- No more inline CSS, by default `rpwe-frontend.css` will be loaded if shortcode or widget present.
+- No more `extract()`. [ref](https://developer.wordpress.org/coding-standards/wordpress-coding-standards/php/#dont-extract)
 
 **Bugfixes:**
 
-- Fixes a bug the widget couldn't load on new Widgets Block page.
+- Default image wasn't working correctly.
 
-**Warning:**
-
-Current thumbnail resize system will be deprecated and replaced with WordPress built-in thumbnail resize function.
 
 
 

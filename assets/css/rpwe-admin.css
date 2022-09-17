@@ -1,10 +1,10 @@
 .rpwe-options small {
-  font-size: 0.7em;
-  color: #999;
+  font-size: 13px;
+  color: #969292;
 }
 
 .rpwe-info {
-  font-size: 0.8em;
+  font-size: 13px;
   line-height: 1.4;
 }
 
@@ -15,4 +15,87 @@
 
 .rpwe-block {
   display: block;
+}
+
+/* === TABS === */
+.widgets-holder-wrap .widget-inside.rpwe-bg,
+.customize-control-widget_form.wide-widget-control .widget-inside.rpwe-bg,
+.wp-block-legacy-widget__edit-form.rpwe-bg,
+.wp-block-legacy-widget__edit-form.rpwe-bg .widget-inside {
+  background-color: #f3f3f3;
+}
+
+.rpwe-tabs {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+}
+
+.rpwe-tabs ul {
+  width: 100px;
+}
+
+.rpwe-tabs li {
+  padding: 0;
+  margin-bottom: 0;
+}
+
+.rpwe-tabs li.active a {
+  background-color: #fff;
+}
+
+.rpwe-tabs li a {
+  text-decoration: none;
+  display: block;
+  padding: 10px;
+  border-radius: 3px 0 0 3px;
+}
+
+.wp-block-legacy-widget__edit-form .rpwe-tabs li a {
+  font-size: 1rem;
+}
+
+#rpwe-tabs-nav {
+  width: 20%;
+  flex: 0 0 20%;
+  list-style: none;
+  padding-left: 0;
+}
+
+.wp-block-legacy-widget__edit-form #rpwe-tabs-nav {
+  margin-top: 0;
+}
+
+#rpwe-tabs-content {
+  width: 80%;
+  flex: 0 0 80%;
+}
+
+.rpwe-tab-content {
+  overflow: hidden;
+  min-height: 320px;
+  margin-top: 1em;
+  margin-bottom: 1em;
+  padding: 1em 1.5em 1em 1.5em;
+  background-color: #fff;
+  border-radius: 0 3px 3px 3px;
+}
+
+.wp-block-legacy-widget__edit-form .rpwe-tab-content {
+  margin-top: 0;
+}
+
+.customize-control-widget_form.wide-widget-control
+  .widget-inside.rpwe-bg
+  .rpwe-tab-content {
+  margin-top: 0;
+  max-width: 300px;
+  width: 300px;
+}
+
+.customize-control-widget_form.wide-widget-control
+  .widget-inside.rpwe-bg
+  #rpwe-tabs-nav {
+  min-width: 80px;
+  width: 80px;
 }

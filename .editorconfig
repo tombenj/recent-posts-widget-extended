@@ -4,12 +4,11 @@
 root = true
 
 [*]
-indent_style = space
-end_of_line = crlf
+end_of_line = lf
 charset = utf-8
 trim_trailing_whitespace = false
 insert_final_newline = true
-quote_type = single
 
 [*.php]
+indent_style = tab
 indent_size = 4
