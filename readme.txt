@@ -1,13 +1,13 @@
 === Recent Posts Widget Extended ===
-Contributors: idenovasi, satrya
-Donate link: https://paypal.me/satrya
+Contributors: satrya
+Donate link: https://www.buymeacoffee.com/gasatrya
 Tags: recent posts, random posts, popular posts, thumbnails, widget, widgets, sidebar, excerpt, category, post tag, taxonomy, post type, post status, shortcode, multiple widgets
 Requires at least: 5.8
-Tested up to: 5.8
+Tested up to: 6.0
 Requires PHP: 7.2
-Stable tag: 1.1.0
-License: GPLv2 or later
-License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Stable tag: 2.0
+License: GPLv3 or later
+License URI: https://www.gnu.org/licenses/gpl-3.0.html
 
 Provides flexible and advanced recent posts. Display it via shortcode or widget with thumbnails, post excerpt, taxonomy and more.
 
@@ -249,10 +249,6 @@ This release comes major changes to the codebase, several fixes and enhancements
 - No more inline CSS, by default `rpwe-frontend.css` will be loaded if shortcode or widget present.
 - No more `extract()`. [ref](https://developer.wordpress.org/coding-standards/wordpress-coding-standards/php/#dont-extract)
 
-**Bugfixes:**
+**Bug fixes:**
 
 - Default image wasn't working correctly.
-
-
-
-

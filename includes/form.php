@@ -301,7 +301,7 @@
 					<label for="<?php echo esc_attr( $this->get_field_id( 'css' ) ); ?>">
 						<?php esc_attr_e( 'Custom CSS', 'recent-posts-widget-extended' ); ?>
 					</label>
-					<textarea class="widefat" id="<?php echo esc_attr( $this->get_field_id( 'css' ) ); ?>" name="<?php echo esc_attr( $this->get_field_name( 'css' ) ); ?>" style="height:180px;"><?php echo esc_attr( $instance['css'] ); ?></textarea>
+					<textarea class="widefat" id="<?php echo esc_attr( $this->get_field_id( 'css' ) ); ?>" name="<?php echo esc_attr( $this->get_field_name( 'css' ) ); ?>" style="height:180px;" readonly><?php echo esc_attr( $instance['css'] ); ?></textarea>
 					<small><?php esc_attr_e( 'If you turn off the default styles, you can use these css code to customize the recent posts style.', 'recent-posts-widget-extended' ); ?></small>
 				</p>
 			</div>
