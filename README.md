@@ -30,11 +30,11 @@ A WordPress plugin to enable a custom, flexible and advanced recent posts, you c
   <summary>How to filter the post query?</summary>
   
   You can use `rpwe_default_query_arguments` to filter it. Example:
-  `
+  ```php
   add_filter( 'rpwe_default_query_arguments', 'your_custom_function' );
   function your_custom_function( $args ) {
     $args['posts_per_page'] = 10; // Changing the number of posts to show.
     return $args;
   }
-  `
+  ```
 </details>
