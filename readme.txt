@@ -1,6 +1,6 @@
 === Recent Posts Widget Extended ===
 Contributors: satrya
-Donate link: https://www.buymeacoffee.com/gasatrya
+Donate link: https://paypal.me/satrya
 Tags: recent posts, random posts, popular posts, thumbnails, widget, widgets, sidebar, excerpt, category, post tag, taxonomy, post type, post status, shortcode, multiple widgets
 Requires at least: 5.8
 Tested up to: 6.0
@@ -15,7 +15,7 @@ Provides flexible and advanced recent posts. Display it via shortcode or widget 
 
 = Support this project =
 
-If you are enjoying this plugin. I would appreciate a cup of coffee to help me keep coding and supporting the project! [Support & donate](https://www.buymeacoffee.com/gasatrya).
+If you are enjoying this plugin. I would appreciate a cup of coffee to help me keep coding and supporting the project! [Support & donate](https://paypal.me/satrya).
 
 = Plugin description =
 
