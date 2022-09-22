@@ -245,7 +245,9 @@ rpwe_default_query_arguments
 
 == Screenshots ==
 
-1. The widget settings
+1. Classic widget
+2. Block widget
+3. Shortcode
 
 == Changelog ==
 
