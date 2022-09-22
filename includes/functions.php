@@ -37,6 +37,9 @@ function rpwe_get_recent_posts( $args = array() ) {
 
 	if ( $posts->have_posts() ) {
 
+		// Link target.
+		$link_target = $args['link_target'] ? '_blank' : '_self';
+
 		// Recent posts wrapper.
 		$wrapper_id    = $args['css_id'] ? ' id="' . esc_attr( $args['css_id'] ) . '"' : '';
 		$wrapper_class = $args['css_class'] ? ' class="rpwe-block ' . esc_attr( $args['css_class'] ) . '"' : ' class="rpwe-block"';
@@ -66,7 +69,7 @@ function rpwe_get_recent_posts( $args = array() ) {
 				if ( has_post_thumbnail() ) {
 
 					// Thumbnail link.
-					$html .= '<a class="rpwe-img" href="' . esc_url( get_permalink() ) . '">';
+					$html .= '<a class="rpwe-img" href="' . esc_url( get_permalink() ) . '" target="' . $link_target . '">';
 
 					// Display the image.
 					if ( $image ) {
@@ -114,9 +117,11 @@ function rpwe_get_recent_posts( $args = array() ) {
 			}
 
 			// The title.
-			$html .= apply_filters( 'rpwe_post_title_wrap_open', '<h3 class="rpwe-title">' );
-			$html .= '<a href="' . esc_url( get_permalink() ) . '">' . esc_attr( get_the_title() ) . '</a>';
-			$html .= apply_filters( 'rpwe_post_title_wrap_close', '</h3>' );
+			if ( $args['post_title'] ) {
+				$html .= apply_filters( 'rpwe_post_title_wrap_open', '<h3 class="rpwe-title">' );
+				$html .= '<a href="' . esc_url( get_permalink() ) . '" target="' . $link_target . '">' . esc_attr( get_the_title() ) . '</a>';
+				$html .= apply_filters( 'rpwe_post_title_wrap_close', '</h3>' );
+			}
 
 			if ( $args['date'] ) {
 				$date = get_the_date();

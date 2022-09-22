@@ -16,7 +16,7 @@
 			<li><a href="#tab2"><?php esc_html_e( 'Posts', 'recent-posts-widget-extended' ); ?></a></li>
 			<li><a href="#tab3"><?php esc_html_e( 'Image', 'recent-posts-widget-extended' ); ?></a></li>
 			<li><a href="#tab4"><?php esc_html_e( 'Excerpt', 'recent-posts-widget-extended' ); ?></a></li>
-			<li><a href="#tab5"><?php esc_html_e( 'Meta', 'recent-posts-widget-extended' ); ?></a></li>
+			<li><a href="#tab5"><?php esc_html_e( 'Control', 'recent-posts-widget-extended' ); ?></a></li>
 			<li><a href="#tab6"><?php esc_html_e( 'Style', 'recent-posts-widget-extended' ); ?></a></li>
 		</ul>
 
@@ -261,30 +261,43 @@
 
 			<div id="tab5" class="rpwe-tab-content">
 				<p>
+					<input id="<?php echo esc_attr( $this->get_field_id( 'post_title' ) ); ?>" name="<?php echo esc_attr( $this->get_field_name( 'post_title' ) ); ?>" type="checkbox" <?php checked( $instance['post_title'] ); ?> />
+					<label for="<?php echo esc_attr( $this->get_field_id( 'post_title' ) ); ?>">
+						<?php esc_attr_e( 'Display post title', 'recent-posts-widget-extended' ); ?>
+					</label>
+				</p>
+				<p>
 					<input id="<?php echo esc_attr( $this->get_field_id( 'comment_count' ) ); ?>" name="<?php echo esc_attr( $this->get_field_name( 'comment_count' ) ); ?>" type="checkbox" <?php checked( $instance['comment_count'] ); ?> />
 					<label for="<?php echo esc_attr( $this->get_field_id( 'comment_count' ) ); ?>">
-						<?php esc_attr_e( 'Display Comment Count', 'recent-posts-widget-extended' ); ?>
+						<?php esc_attr_e( 'Display comment count', 'recent-posts-widget-extended' ); ?>
 					</label>
 				</p>
 
 				<p>
 					<input id="<?php echo esc_attr( $this->get_field_id( 'date' ) ); ?>" name="<?php echo esc_attr( $this->get_field_name( 'date' ) ); ?>" type="checkbox" <?php checked( $instance['date'] ); ?> />
 					<label for="<?php echo esc_attr( $this->get_field_id( 'date' ) ); ?>">
-						<?php esc_attr_e( 'Display Date', 'recent-posts-widget-extended' ); ?>
+						<?php esc_attr_e( 'Display date', 'recent-posts-widget-extended' ); ?>
 					</label>
 				</p>
 
 				<p>
 					<input id="<?php echo esc_attr( $this->get_field_id( 'date_modified' ) ); ?>" name="<?php echo esc_attr( $this->get_field_name( 'date_modified' ) ); ?>" type="checkbox" <?php checked( $instance['date_modified'] ); ?> />
 					<label for="<?php echo esc_attr( $this->get_field_id( 'date_modified' ) ); ?>">
-						<?php esc_attr_e( 'Display Modification Date', 'recent-posts-widget-extended' ); ?>
+						<?php esc_attr_e( 'Use a modification date', 'recent-posts-widget-extended' ); ?>
 					</label>
 				</p>
 
 				<p>
 					<input id="<?php echo esc_attr( $this->get_field_id( 'date_relative' ) ); ?>" name="<?php echo esc_attr( $this->get_field_name( 'date_relative' ) ); ?>" type="checkbox" <?php checked( $instance['date_relative'] ); ?> />
 					<label for="<?php echo esc_attr( $this->get_field_id( 'date_relative' ) ); ?>">
-						<?php esc_attr_e( 'Use Relative Date. eg: 5 days ago', 'recent-posts-widget-extended' ); ?>
+						<?php esc_attr_e( 'Use relative date. eg: 5 days ago', 'recent-posts-widget-extended' ); ?>
+					</label>
+				</p>
+
+				<p>
+					<input id="<?php echo esc_attr( $this->get_field_id( 'link_target' ) ); ?>" name="<?php echo esc_attr( $this->get_field_name( 'link_target' ) ); ?>" type="checkbox" <?php checked( $instance['link_target'] ); ?> />
+					<label for="<?php echo esc_attr( $this->get_field_id( 'link_target' ) ); ?>">
+						<?php esc_attr_e( 'Open links in new tab', 'recent-posts-widget-extended' ); ?>
 					</label>
 				</p>
 			</div>
@@ -302,7 +315,24 @@
 						<?php esc_attr_e( 'Custom CSS', 'recent-posts-widget-extended' ); ?>
 					</label>
 					<textarea class="widefat" id="<?php echo esc_attr( $this->get_field_id( 'css' ) ); ?>" name="<?php echo esc_attr( $this->get_field_name( 'css' ) ); ?>" style="height:180px;" readonly><?php echo esc_attr( $instance['css'] ); ?></textarea>
-					<small><?php esc_attr_e( 'If you turn off the default styles, you can use these css code to customize the recent posts style.', 'recent-posts-widget-extended' ); ?></small>
+					<small><?php esc_attr_e( 'Custom CSS is no longer editable, please copy and paste your custom CSS to', 'recent-posts-widget-extended' ); ?></small>
+					<small>
+						<?php
+							printf(
+								'<a href="%1$s">%2$s</a>.',
+								esc_url(
+									add_query_arg(
+										array(
+											array( 'autofocus' => array( 'section' => 'custom_css' ) ),
+											'return' => rawurlencode( remove_query_arg( wp_removable_query_args(), wp_unslash( $_SERVER['REQUEST_URI'] ) ) ),
+										),
+										admin_url( 'customize.php' )
+									)
+								),
+								__( 'Additional CSS panel' )
+							);
+							?>
+					</small>
 				</p>
 			</div>
 

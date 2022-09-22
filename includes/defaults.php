@@ -42,6 +42,10 @@ function rpwe_get_default_args() {
 		'readmore_text'   => __( 'Read More &raquo;', 'recent-posts-widget-extended' ),
 		'comment_count'   => false,
 
+		// New.
+		'post_title'      => true,
+		'link_target'     => false,
+
 		'styles_default'  => true,
 		'css'             => $css_defaults,
 		'cssID'           => '', // Deprecated.

@@ -113,8 +113,6 @@ class RPWE_Widget extends WP_Widget {
 			wp_enqueue_style( 'rpwe-style' );
 		}
 
-		$find_curly = str_replace( '.', '#' . $args['widget_id'] . ' .', $instance['css'] );
-
 		if ( $recent ) {
 
 			// Output the theme's $before_widget wrapper.
@@ -122,7 +120,7 @@ class RPWE_Widget extends WP_Widget {
 
 			// If the default style is disabled then use the custom css if it's not empty.
 			if ( ! $instance['styles_default'] && ! empty( $instance['css'] ) ) {
-				echo '<style>' . esc_attr( $find_curly ) . '</style>';
+				echo '<style>' . esc_attr( $instance['css'] ) . '</style>';
 			}
 
 			// If both title and title url is not empty, display it.
@@ -187,6 +185,10 @@ class RPWE_Widget extends WP_Widget {
 		$instance['readmore']      = isset( $new_instance['readmore'] ) ? (bool) $new_instance['readmore'] : false;
 		$instance['readmore_text'] = sanitize_text_field( $new_instance['readmore_text'] );
 		$instance['comment_count'] = isset( $new_instance['comment_count'] ) ? (bool) $new_instance['comment_count'] : false;
+
+		// New.
+		$instance['post_title']  = isset( $new_instance['post_title'] ) ? (bool) $new_instance['post_title'] : false;
+		$instance['link_target'] = isset( $new_instance['link_target'] ) ? (bool) $new_instance['link_target'] : false;
 
 		$instance['thumb']         = isset( $new_instance['thumb'] ) ? (bool) $new_instance['thumb'] : false;
 		$instance['thumb_height']  = intval( $new_instance['thumb_height'] );

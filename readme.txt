@@ -13,36 +13,38 @@ Provides flexible and advanced recent posts. Display it via shortcode or widget 
 
 == Description ==
 
-This plugin will enable a custom, flexible and super [advanced recent posts](https://idenovasi.com/projects/recent-posts-widget-extended/), you can display it via shortcode or widget. Allows you to display a list of the most recent posts with thumbnail, excerpt and post date, also you can display it from all or specific or multiple taxonomy, post type and much more!
+= Support this project =
+
+If you are enjoying this plugin. I would appreciate a cup of coffee to help me keep coding and supporting the project! [Support & donate](https://www.buymeacoffee.com/gasatrya).
+
+= Plugin description =
+
+This plugin will enable a custom, flexible and advanced recent posts, you can display it via shortcode or widget. Allows you to display a list of the most recent posts with thumbnail, excerpt and post date, also you can display it from all or specific or multiple taxonomy, post type and much more!
 
 = Features Include =
 
-* Taxonomy support!
-* Post status option.
-* Custom html or text before and/or after recent posts.
-* Available filter for dev.
-* Shortcode feature.
-* Better image cropping.
-* Allow you to set title url.
 * Display by date, comment count or random.
-* Display thumbnails, with customizable size and alignment.
-* Display excerpt, with customizable length.
-* Display from all, specific or multiple category.
-* Display from all, specific or multiple tag.
-* Display post date.
-* Display modification date
-* Display comment count
-* Exclude current post
-* Read more option.
-* Post type option.
+* Enable thumbnails, with customizable size and alignment.
+* Enable excerpt, with customizable length.
+* Display from all, specific or multiple category or tag.
+* Enable post date.
+* Display modification date.
+* Display comment count.
+* Post type support.
+* Taxonomy support.
+* Post status.
+* Custom HTML or text before and/or after recent posts.
+* **Shortcode feature**.
+* Crop image on the fly.
+* Enable Read more.
 * Custom CSS.
 * Multiple widgets.
+* Available filter for developer.
 
-= Support this project =
+= Links =
 
-* [Translate to your language](https://translate.wordpress.org/projects/wp-plugins/recent-posts-widget-extended/).
-* Contribute on [Github](https://github.com/idenovasi/recent-posts-widget-extended).
-* [Donate](https://paypal.me/satrya).
+* Translate to [your language](https://translate.wordpress.org/projects/wp-plugins/recent-posts-widget-extended/).
+* Contribute or submit issues on [Github](https://github.com/gasatrya/recent-posts-widget-extended).
 
 == Installation ==
 
@@ -67,6 +69,72 @@ This plugin will enable a custom, flexible and super [advanced recent posts](htt
 
 == Frequently Asked Questions ==
 
+= Shortcode Explanation =
+
+Explanation of shortcode options:
+
+Basic shortcode
+`
+[rpwe]
+`
+
+Display 10 recent posts
+`
+[rpwe limit="10"]
+`
+
+Display 10 recent posts without thumbnail
+`
+[rpwe limit="10" thumb="false"]
+`
+
+Open post link in new tab
+`
+[rpwe link_target="true"]
+`
+
+Disable default style
+`
+[rpwe styles_default="false"]
+`
+
+= Shortcode Arguments =
+
+**Here are the full default shortcode arguments**
+`
+limit="5"
+offset=""
+order="DESC"
+orderby="date"
+post_type="post"
+cat=""
+tag=""
+taxonomy=""
+post_type="post"
+post_status="publish"
+ignore_sticky="1"
+taxonomy=""
+
+post_title="true"
+link_target="false"
+excerpt="false"
+length="10"
+thumb="true"
+thumb_height="45"
+thumb_width="45"
+thumb_default="https://via.placeholder.com/45x45/f0f0f0/ccc"
+thumb_align="rpwe-alignleft"
+date="true"
+readmore="false"
+readmore_text="Read More &raquo;"
+
+styles_default="true"
+css_id=""
+css_class=""
+before=""
+after=""
+`
+
 = How to filter the post query? =
 You can use `rpwe_default_query_arguments` to filter it. Example:
 `
@@ -87,7 +155,7 @@ Did you installed any Post or Post Type Order? Please try to deactivate it and t
 Your theme needs to support Post Thumbnail, please go to http://codex.wordpress.org/Post_Thumbnails to read more info and how to activate it in your theme.
 
 = How to add custom style? =
-First, please uncheck the **Use Default Style** option then place the css code below in the Custom CSS box, then you can customize it to fit your needs
+First, please uncheck the **Use Default Style** option then place the css code below on the Additional CSS panel on Customizer, then you can customize it to fit your needs
 `
 .rpwe-block ul {
 	list-style: none !important;
@@ -179,59 +247,10 @@ rpwe_default_query_arguments
 
 1. The widget settings
 
-== Shorcode Explanation ==
-
-Explanation of shortcode options:
-
-Basic shortcode
-`
-[rpwe]
-`
-
-Display 10 recent posts
-`
-[rpwe limit="10"]
-`
-
-Display 10 recent posts with thumbnail
-`
-[rpwe limit="10" thumb="true"]
-`
-
-**Here's the full default shortcode arguments**
-`
-limit="5"
-offset=""
-order="DESC"
-orderby="date"
-post_type="post"
-cat=""
-tag=""
-taxonomy=""
-post_type="post"
-post_status="publish"
-ignore_sticky="1"
-taxonomy=""
-excerpt="false"
-length="10"
-thumb="true"
-thumb_height="45"
-thumb_width="45"
-thumb_default="http://placehold.it/45x45/f0f0f0/ccc"
-thumb_align="rpwe-alignleft"
-date="true"
-readmore="false"
-readmore_text="Read More &raquo;"
-styles_default="true"
-cssID=""
-before=""
-after=""
-`
-
 == Changelog ==
 
 **2.0 - Major Changes**   
-*Release Date: Sept 20, 2022*
+*Release Date: Sept 22, 2022*
 
 This release comes major changes to the codebase, several fixes and enhancements. The reason was to follow the latest WordPress coding standard, more secure. **Classic widget and block widget is now supported!**
 
@@ -241,6 +260,7 @@ This release comes major changes to the codebase, several fixes and enhancements
 - **CSS ID** widget, please re-added your ID to the input field.
 - `before` and `after` shortcode attribute move to inside the recent posts container.
 - Widget **custom style** location change. If your style is not loaded, please re-save the widget.
+- **Custom CSS** no longer editable, please move your custom CSS to the Additional CSS panel on Customizer.
 
 **Enhancements:**
 
@@ -248,7 +268,9 @@ This release comes major changes to the codebase, several fixes and enhancements
 - Support **lazy** loading for the thumbnail.
 - No more inline CSS, by default `rpwe-frontend.css` will be loaded if shortcode or widget present.
 - No more `extract()`. [ref](https://developer.wordpress.org/coding-standards/wordpress-coding-standards/php/#dont-extract)
+- **New** show hide the post title.
 
 **Bug fixes:**
 
 - Default image wasn't working correctly.
+- `true` or `false` shortcode value.
