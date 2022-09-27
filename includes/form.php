@@ -314,25 +314,8 @@
 					<label for="<?php echo esc_attr( $this->get_field_id( 'css' ) ); ?>">
 						<?php esc_attr_e( 'Custom CSS', 'recent-posts-widget-extended' ); ?>
 					</label>
-					<textarea class="widefat" id="<?php echo esc_attr( $this->get_field_id( 'css' ) ); ?>" name="<?php echo esc_attr( $this->get_field_name( 'css' ) ); ?>" style="height:180px;" readonly><?php echo esc_attr( $instance['css'] ); ?></textarea>
-					<small><?php esc_attr_e( 'Custom CSS is no longer editable, please copy and paste your custom CSS to', 'recent-posts-widget-extended' ); ?></small>
-					<small>
-						<?php
-							printf(
-								'<a href="%1$s">%2$s</a>.',
-								esc_url(
-									add_query_arg(
-										array(
-											array( 'autofocus' => array( 'section' => 'custom_css' ) ),
-											'return' => rawurlencode( remove_query_arg( wp_removable_query_args(), wp_unslash( $_SERVER['REQUEST_URI'] ) ) ),
-										),
-										admin_url( 'customize.php' )
-									)
-								),
-								__( 'Additional CSS panel' )
-							);
-							?>
-					</small>
+					<textarea class="widefat" id="<?php echo esc_attr( $this->get_field_id( 'css' ) ); ?>" name="<?php echo esc_attr( $this->get_field_name( 'css' ) ); ?>" style="height:180px;"><?php echo esc_attr( $instance['css'] ); ?></textarea>
+					<small><?php esc_attr_e( 'If you turn off the default styles, you can use these css code to customize the recent posts style.', 'recent-posts-widget-extended' ); ?></small>
 				</p>
 			</div>
 

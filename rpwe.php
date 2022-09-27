@@ -3,7 +3,7 @@
  * Plugin Name:       Recent Posts Widget Extended
  * Plugin URI:        https://github.com/gasatrya/recent-posts-widget-extended
  * Description:       Enables advanced widget & shortcode that gives you total control over the output of your site’s most recent Posts.
- * Version:           2.0
+ * Version:           2.0.1
  * Requires at least: 5.8
  * Requires PHP:      7.2
  * Author:            Ga Satrya
@@ -33,6 +33,7 @@ require_once RPWE_INCLUDES . '/query.php';
 require_once RPWE_INCLUDES . '/functions.php';
 require_once RPWE_INCLUDES . '/shortcode.php';
 require_once RPWE_INCLUDES . '/helpers.php';
+require_once RPWE_INCLUDES . '/compatibility.php';
 
 /**
  * Language

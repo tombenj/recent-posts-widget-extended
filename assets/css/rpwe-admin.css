@@ -22,7 +22,8 @@
 .widgets-holder-wrap .widget-inside.rpwe-bg,
 .customize-control-widget_form.wide-widget-control .widget-inside.rpwe-bg,
 .wp-block-legacy-widget__edit-form.rpwe-bg,
-.wp-block-legacy-widget__edit-form.rpwe-bg .widget-inside {
+.wp-block-legacy-widget__edit-form.rpwe-bg .widget-inside,
+.so-content.panel-dialog.rpwe-bg {
   background-color: #f3f3f3;
 }
 
@@ -63,7 +64,8 @@
   padding-left: 0;
 }
 
-.wp-block-legacy-widget__edit-form #rpwe-tabs-nav {
+.wp-block-legacy-widget__edit-form #rpwe-tabs-nav,
+.so-content #rpwe-tabs-nav {
   margin-top: 0;
 }
 
@@ -82,7 +84,8 @@
   border-radius: 0 3px 3px 3px;
 }
 
-.wp-block-legacy-widget__edit-form .rpwe-tab-content {
+.wp-block-legacy-widget__edit-form .rpwe-tab-content,
+.so-content .rpwe-tab-content {
   margin-top: 0;
 }
 

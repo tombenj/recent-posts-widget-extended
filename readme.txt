@@ -5,7 +5,7 @@ Tags: recent posts, random posts, popular posts, thumbnails, widget, widgets, si
 Requires at least: 5.8
 Tested up to: 6.0
 Requires PHP: 7.2
-Stable tag: 2.0
+Stable tag: 2.0.1
 License: GPLv3 or later
 License URI: https://www.gnu.org/licenses/gpl-3.0.html
 
@@ -248,8 +248,23 @@ rpwe_default_query_arguments
 1. Classic widget
 2. Block widget
 3. Shortcode
+4. Siteorigin page builder
 
 == Changelog ==
+
+**2.0.1**   
+*Release Date: Sept 28, 2022*
+
+**Bug fixes:**
+
+- Compatibility issue with Siteorigin Page Builder.
+
+**Enhancements:**
+
+- Re-enable custom CSS setting.
+- Full support Siteorigin Page Builder.
+
+---
 
 **2.0 - Major Changes**   
 *Release Date: Sept 22, 2022*
