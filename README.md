@@ -114,6 +114,22 @@ A WordPress plugin to enable a custom, flexible and advanced recent posts, you c
 ## Changelog
 
 <details>
+  <summary>2.0.1</summary>
+  
+  *Release Date: Sept 28, 2022*
+
+  **Bug fixes:**
+
+  - Compatibility issue with Siteorigin Page Builder.
+
+  **Enhancements:**
+
+  - Re-enable custom CSS setting.
+  - Full support Siteorigin Page Builder.
+  - Adds `display: inline-block;` to the default style, to make sure each list align properly. Thank you [outrospective](https://wordpress.org/support/users/outrospective/)!
+</details>
+
+<details>
   <summary>2.0 - Major Changes</summary>
 
   *Release Date: Sept 23, 2022*

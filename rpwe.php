@@ -21,7 +21,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 	exit;
 }
 
-define( 'RPWE_VERSION', '2.0' );
+define( 'RPWE_VERSION', '2.0.1' );
 define( 'RPWE_CLASSES', plugin_dir_path( __FILE__ ) . 'classes' );
 define( 'RPWE_INCLUDES', plugin_dir_path( __FILE__ ) . 'includes' );
 define( 'RPWE_ASSETS', plugin_dir_url( __FILE__ ) . 'assets' );

@@ -9,6 +9,7 @@
   margin-bottom: 10px;
   padding-bottom: 10px;
   list-style-type: none;
+  display: inline-block;
 }
 
 .rpwe-block a {
@@ -66,7 +67,7 @@
 
 .rpwe-clearfix:before,
 .rpwe-clearfix:after {
-  content: "";
+  content: '';
   display: table !important;
 }
 

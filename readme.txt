@@ -263,6 +263,7 @@ rpwe_default_query_arguments
 
 - Re-enable custom CSS setting.
 - Full support Siteorigin Page Builder.
+- Adds `display: inline-block;` to the default style, to make sure each list align properly. Thank you [outrospective](https://wordpress.org/support/users/outrospective/)!
 
 ---
 
