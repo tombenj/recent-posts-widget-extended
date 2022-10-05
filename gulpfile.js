@@ -19,6 +19,7 @@ function copyFiles() {
     '!vendor/**',
     '!sass/**',
     '!.git/**',
+    '!.vscode/**',
     '!.github/**',
     '!gulpfile.js',
     '!package.json',

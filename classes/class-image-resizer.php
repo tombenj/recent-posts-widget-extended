@@ -53,7 +53,9 @@ if ( ! class_exists( 'Image_Resizer' ) ) {
 		 * For your custom default usage you may want to initialize an Image_Resizer object by yourself and then have own defaults
 		 */
 		public static function get_instance() {
-			self::$instance = new self();
+			if ( null === self::$instance ) {
+				self::$instance = new self();
+			}
 			return self::$instance;
 		}
 

@@ -136,7 +136,7 @@ function rpwe_get_recent_posts( $args = array() ) {
 					/* translators: %s: current time */
 					$date = sprintf( __( '%s ago', 'recent-posts-widget-extended' ), human_time_diff( get_the_modified_date( 'U' ), strtotime( wp_date( 'Y-m-d H:i:s' ) ) ) );
 				}
-				$html .= '<time class="rpwe-time modfied" datetime="' . esc_html( get_the_modified_date( 'c' ) ) . '">' . esc_html( $date ) . '</time>';
+				$html .= '<time class="rpwe-time modified" datetime="' . esc_html( get_the_modified_date( 'c' ) ) . '">' . esc_html( $date ) . '</time>';
 			}
 
 			if ( $args['comment_count'] ) {

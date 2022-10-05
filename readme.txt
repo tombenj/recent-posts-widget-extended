@@ -1,11 +1,11 @@
 === Recent Posts Widget Extended ===
 Contributors: satrya
-Donate link: https://paypal.me/satrya
+Donate link: https://github.com/sponsors/gasatrya
 Tags: recent posts, random posts, popular posts, thumbnails, widget, widgets, sidebar, excerpt, category, post tag, taxonomy, post type, post status, shortcode, multiple widgets
 Requires at least: 5.8
 Tested up to: 6.0
 Requires PHP: 7.2
-Stable tag: 2.0.1
+Stable tag: 2.0.2
 License: GPLv3 or later
 License URI: https://www.gnu.org/licenses/gpl-3.0.html
 
@@ -13,13 +13,13 @@ Provides flexible and advanced recent posts. Display it via shortcode or widget 
 
 == Description ==
 
-= Support this project =
-
-If you are enjoying this plugin. I would appreciate a cup of coffee to help me keep coding and supporting the project! [Support & donate](https://paypal.me/satrya).
-
 = Plugin description =
 
 This plugin will enable a custom, flexible and advanced recent posts, you can display it via shortcode or widget. Allows you to display a list of the most recent posts with thumbnail, excerpt and post date, also you can display it from all or specific or multiple taxonomy, post type and much more!
+
+= Support this project =
+
+If you are enjoying this plugin. I would appreciate a cup of coffee to help me keep coding and supporting the project! [Support & donate](https://github.com/sponsors/gasatrya).
 
 = Features Include =
 
@@ -83,6 +83,11 @@ Display 10 recent posts
 [rpwe limit="10"]
 `
 
+Display 5 random posts
+`
+[rpwe limit="5" orderby="rand"]
+`
+
 Display 10 recent posts without thumbnail
 `
 [rpwe limit="10" thumb="false"]
@@ -144,9 +149,6 @@ function your_custom_function( $args ) {
 	return $args;
 }
 `
-
-= How to filter the post excerpt? =
-Post excerpt now comes with filter to easily dev to change/customize it. `apply_filters( 'rpwe_excerpt', get_the_excerpt() )`
 
 = Ordering not working! =
 Did you installed any Post or Post Type Order? Please try to deactivate it and try again the ordering. [(related question)](http://wordpress.org/support/topic/ordering-set-to-descending-not-working)
@@ -251,6 +253,20 @@ rpwe_default_query_arguments
 4. Siteorigin page builder
 
 == Changelog ==
+
+**2.0.2**   
+*Release Date: Oct 05, 2022*
+
+**Bug fixes:**
+
+- Prevent double slash when loading the php file.
+- Use `display: block` for the list, `inline-block` causing issue for some websites.
+
+**Enhancements:**
+
+- Minor issue with the auto generate thumbnail function.
+
+---
 
 **2.0.1**   
 *Release Date: Sept 28, 2022*

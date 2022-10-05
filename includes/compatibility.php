@@ -30,7 +30,7 @@ add_filter(
 add_action(
 	'siteorigin_panel_enqueue_admin_scripts',
 	function() {
-		wp_enqueue_script( 'rpwe-siteorigin', RPWE_ASSETS . '/js/rpwe-siteorigin.js', array( 'jquery' ), RPWE_VERSION, true );
-		wp_enqueue_style( 'rpwe-admin-style', RPWE_ASSETS . '/css/rpwe-admin.css', null, RPWE_VERSION );
+		wp_enqueue_script( 'rpwe-siteorigin', RPWE_URL . 'assets/js/rpwe-siteorigin.js', array( 'jquery' ), RPWE_VERSION, true );
+		wp_enqueue_style( 'rpwe-admin-style', RPWE_URL . 'assets/css/rpwe-admin.css', null, RPWE_VERSION );
 	}
 );
