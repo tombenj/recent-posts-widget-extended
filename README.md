@@ -114,6 +114,21 @@ A WordPress plugin to enable a custom, flexible and advanced recent posts, you c
 ## Changelog
 
 <details>
+  <summary>2.0.2</summary>
+  
+  *Release Date: Oct 05, 2022*
+
+  **Bug fixes:**
+
+  - Prevent double slash when loading the php file.
+  - Use `display: block` for the list, `inline-block` causing issue for some websites.
+
+  **Enhancements:**
+
+  - Minor issue with the auto generate thumbnail function.
+</details>
+
+<details>
   <summary>2.0.1</summary>
   
   *Release Date: Sept 28, 2022*
