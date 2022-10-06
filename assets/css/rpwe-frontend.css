@@ -8,8 +8,7 @@
   border-bottom: 1px solid #eee;
   margin-bottom: 10px;
   padding-bottom: 10px;
-  list-style-type: none;
-  display: block;
+  list-style-type: none !important;
 }
 
 .rpwe-block a {
