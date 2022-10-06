@@ -265,6 +265,8 @@ rpwe_default_query_arguments
 **Enhancements:**
 
 - Minor issue with the auto generate thumbnail function.
+- Fix translation issue. Thanks [Alex Lion](https://github.com/alexclassroom).
+- CSS tweak.
 
 ---
 

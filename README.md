@@ -126,6 +126,8 @@ A WordPress plugin to enable a custom, flexible and advanced recent posts, you c
   **Enhancements:**
 
   - Minor issue with the auto generate thumbnail function.
+  - Fix translation issue. Thanks [Alex Lion](https://github.com/alexclassroom).
+  - CSS tweak.
 </details>
 
 <details>
