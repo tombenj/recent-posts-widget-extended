@@ -334,8 +334,8 @@ class RPWE_Widget extends WP_Widget {
 								<?php esc_attr_e( 'Order', 'recent-posts-widget-extended' ); ?>
 							</label>
 							<select class="widefat" id="<?php echo esc_attr( $this->get_field_id( 'order' ) ); ?>" name="<?php echo esc_attr( $this->get_field_name( 'order' ) ); ?>" style="width:100%;">
-								<option value="DESC" <?php selected( $instance['order'], 'DESC' ); ?>><?php esc_attr_e( 'Descending', 'rpwe' ); ?></option>
-								<option value="ASC" <?php selected( $instance['order'], 'ASC' ); ?>><?php esc_attr_e( 'Ascending', 'rpwe' ); ?></option>
+								<option value="DESC" <?php selected( $instance['order'], 'DESC' ); ?>><?php esc_attr_e( 'Descending', 'recent-posts-widget-extended' ); ?></option>
+								<option value="ASC" <?php selected( $instance['order'], 'ASC' ); ?>><?php esc_attr_e( 'Ascending', 'recent-posts-widget-extended' ); ?></option>
 							</select>
 						</p>
 
@@ -344,14 +344,14 @@ class RPWE_Widget extends WP_Widget {
 								<?php esc_attr_e( 'Orderby', 'recent-posts-widget-extended' ); ?>
 							</label>
 							<select class="widefat" id="<?php echo esc_attr( $this->get_field_id( 'orderby' ) ); ?>" name="<?php echo esc_attr( $this->get_field_name( 'orderby' ) ); ?>" style="width:100%;">
-								<option value="ID" <?php selected( $instance['orderby'], 'ID' ); ?>><?php esc_attr_e( 'ID', 'rpwe' ); ?></option>
-								<option value="author" <?php selected( $instance['orderby'], 'author' ); ?>><?php esc_attr_e( 'Author', 'rpwe' ); ?></option>
-								<option value="title" <?php selected( $instance['orderby'], 'title' ); ?>><?php esc_attr_e( 'Title', 'rpwe' ); ?></option>
-								<option value="date" <?php selected( $instance['orderby'], 'date' ); ?>><?php esc_attr_e( 'Date', 'rpwe' ); ?></option>
-								<option value="modified" <?php selected( $instance['orderby'], 'modified' ); ?>><?php esc_attr_e( 'Modified', 'rpwe' ); ?></option>
-								<option value="rand" <?php selected( $instance['orderby'], 'rand' ); ?>><?php esc_attr_e( 'Random', 'rpwe' ); ?></option>
-								<option value="comment_count" <?php selected( $instance['orderby'], 'comment_count' ); ?>><?php esc_attr_e( 'Comment Count', 'rpwe' ); ?></option>
-								<option value="menu_order" <?php selected( $instance['orderby'], 'menu_order' ); ?>><?php esc_attr_e( 'Menu Order', 'rpwe' ); ?></option>
+								<option value="ID" <?php selected( $instance['orderby'], 'ID' ); ?>><?php esc_attr_e( 'ID', 'recent-posts-widget-extended' ); ?></option>
+								<option value="author" <?php selected( $instance['orderby'], 'author' ); ?>><?php esc_attr_e( 'Author', 'recent-posts-widget-extended' ); ?></option>
+								<option value="title" <?php selected( $instance['orderby'], 'title' ); ?>><?php esc_attr_e( 'Title', 'recent-posts-widget-extended' ); ?></option>
+								<option value="date" <?php selected( $instance['orderby'], 'date' ); ?>><?php esc_attr_e( 'Date', 'recent-posts-widget-extended' ); ?></option>
+								<option value="modified" <?php selected( $instance['orderby'], 'modified' ); ?>><?php esc_attr_e( 'Modified', 'recent-posts-widget-extended' ); ?></option>
+								<option value="rand" <?php selected( $instance['orderby'], 'rand' ); ?>><?php esc_attr_e( 'Random', 'recent-posts-widget-extended' ); ?></option>
+								<option value="comment_count" <?php selected( $instance['orderby'], 'comment_count' ); ?>><?php esc_attr_e( 'Comment Count', 'recent-posts-widget-extended' ); ?></option>
+								<option value="menu_order" <?php selected( $instance['orderby'], 'menu_order' ); ?>><?php esc_attr_e( 'Menu Order', 'recent-posts-widget-extended' ); ?></option>
 							</select>
 						</p>
 
@@ -390,9 +390,9 @@ class RPWE_Widget extends WP_Widget {
 							</label>
 							<input type="text" class="widefat" id="<?php echo esc_attr( $this->get_field_id( 'taxonomy' ) ); ?>" name="<?php echo esc_attr( $this->get_field_name( 'taxonomy' ) ); ?>" value="<?php echo esc_attr( $instance['taxonomy'] ); ?>" />
 							<small>
-								<?php esc_attr_e( 'Ex: category=1,2,4&amp;post_tag=6,12. ', 'rpwe' ); ?>
+								<?php esc_attr_e( 'Ex: category=1,2,4&amp;post_tag=6,12. ', 'recent-posts-widget-extended' ); ?>
 								<?php
-								esc_attr_e( 'Available: ', 'rpwe' );
+								esc_attr_e( 'Available: ', 'recent-posts-widget-extended' );
 								echo implode( ', ', get_taxonomies( array( 'public' => true ) ) );
 								?>
 							</small>
