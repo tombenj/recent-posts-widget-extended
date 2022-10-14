@@ -240,6 +240,7 @@ class RPWE_Widget extends WP_Widget {
 					<li><a href="#tab4"><?php esc_html_e( 'Excerpt', 'recent-posts-widget-extended' ); ?></a></li>
 					<li><a href="#tab5"><?php esc_html_e( 'Control', 'recent-posts-widget-extended' ); ?></a></li>
 					<li><a href="#tab6"><?php esc_html_e( 'Style', 'recent-posts-widget-extended' ); ?></a></li>
+					<li><a href="#tab7"><?php esc_html_e( 'Support', 'recent-posts-widget-extended' ); ?></a></li>
 				</ul>
 
 				<div id="rpwe-tabs-content">
@@ -539,6 +540,13 @@ class RPWE_Widget extends WP_Widget {
 							<textarea class="widefat" id="<?php echo esc_attr( $this->get_field_id( 'css' ) ); ?>" name="<?php echo esc_attr( $this->get_field_name( 'css' ) ); ?>" style="height:180px;"><?php echo esc_attr( $instance['css'] ); ?></textarea>
 							<small><?php esc_attr_e( 'If you turn off the default styles, you can use these css code to customize the recent posts style.', 'recent-posts-widget-extended' ); ?></small>
 						</p>
+					</div>
+
+					<div id="tab7" class="rpwe-tab-content">
+						<p>
+							<?php esc_html_e( 'If you are enjoying this plugin. I would appreciate a donation to help me keep coding and supporting this project!', 'recent-posts-widget-extende' ); ?>
+						</p>
+						<p><a class="button" href="https://paypal.me/satrya" target="_blank"><?php esc_html_e( 'Donate Now', 'recent-posts-widget-extended' ); ?></a></p>
 					</div>
 
 				</div>
